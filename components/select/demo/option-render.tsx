@@ -7,37 +7,31 @@ const handleChange = (value: string[]) => {
 
 const options = [
   {
-    label: 'China',
-    value: 'china',
-    emoji: '🇨🇳',
-    desc: 'China (中国)',
+    label: 'Private',
+    value: 'private',
+    emoji: '🔒',
+    desc: 'Private to me',
   },
   {
-    label: 'USA',
-    value: 'usa',
-    emoji: '🇺🇸',
-    desc: 'USA (美国)',
+    label: 'Space',
+    value: 'space',
+    emoji: '👥',
+    desc: 'Space',
   },
   {
-    label: 'Japan',
-    value: 'japan',
-    emoji: '🇯🇵',
-    desc: 'Japan (日本)',
-  },
-  {
-    label: 'Korea',
-    value: 'korea',
-    emoji: '🇰🇷',
-    desc: 'Korea (韩国)',
-  },
+    label: 'Account',
+    value: 'account',
+    emoji: '🌎',
+    desc: 'Account',
+  }
 ];
 
 const App: React.FC = () => (
   <Select
     mode="multiple"
     style={{ width: '100%' }}
-    placeholder="select one country"
-    defaultValue={['china']}
+    placeholder="select permission"
+    defaultValue={['space']}
     onChange={handleChange}
     options={options}
     optionRender={(option) => (
